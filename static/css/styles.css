@@ -1,5 +1,5 @@
 :root {
-    --primary-color: url(https://static.tibia.com/images/global/content/scroll.gif);
+    --primary-color: url("../images/background-1.gif");
     --secondary-color: #f6e6cf;
     --accent-color: #000000;
     --text-color: #f4f4f4;
@@ -13,7 +13,7 @@ body, html {
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
-    background-image: url(https://static.tibia.com/images/global/content/scroll.gif);
+    background-image: var(--primary-color);
     background-size: cover;
     background-attachment: fixed;
     min-height: 100%;
@@ -27,7 +27,7 @@ header, footer {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 100%;
     z-index: 1000;
-    background-image: url(https://static.tibia.com/images/global/content/cacheinfo_background.gif);
+    background-image: url("../images/background-title-red.gif");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,13 +109,13 @@ p {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-image:url(https://static.tibia.com/images/global/content/title-background-green.gif);;
+    background-image: url("../images/background-title-green.gif");
+    color: var(--secondary-color);
     border: none;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    color: white;
 }
 
 button:hover {
